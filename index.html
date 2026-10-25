@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#101116">
+  <meta name="description" content="Funnel Master: aprende marketing digital jugando.">
+  <title>FUNNEL MASTER — El reto del embudo</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#" id="brandHome" aria-label="Ir al inicio"><span class="brand-mark">F</span><span>FUNNEL<span class="gold">MASTER</span></span></a>
+      <div class="top-stats"><span class="pill">⚡ <b id="xpTop">0</b> XP</span><span class="pill">💰 $<b id="moneyTop">1000</b></span></div>
+    </header>
+
+    <main>
+      <section id="homeScreen" class="screen hero-screen active">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="pulse"></span> SIMULADOR DE MARKETING DIGITAL</div>
+          <h1>Convierte visitas<br>en <span class="gold">clientes fieles.</span></h1>
+          <p class="hero-sub">Toma decisiones, construye campañas y dirige una empresa. Cada estrategia cambia tus resultados.</p>
+          <div class="hero-actions"><button class="btn primary" id="startBtn">▶ Iniciar misión</button><button class="btn secondary" id="tutorialBtn">Cómo jugar</button></div>
+          <div class="hero-mini"><div><strong>5</strong><span>etapas</span></div><div><strong>5</strong><span>modos</span></div><div><strong>∞</strong><span>estrategias</span></div></div>
+        </div>
+        <div class="hero-art" aria-label="Ilustración del embudo de ventas">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="funnel-graphic"><div class="funnel-layer layer1">01 · ATRACCIÓN</div><div class="funnel-layer layer2">02 · INTERÉS</div><div class="funnel-layer layer3">03 · CONSIDERACIÓN</div><div class="funnel-layer layer4">04 · CONVERSIÓN</div><div class="funnel-layer layer5">05 · FIDELIZACIÓN</div></div>
+          <div class="float-tag tag-a">↗ + alcance</div><div class="float-tag tag-b">✦ + confianza</div>
+        </div>
+        <div class="disclaimer">Los valores de dinero, clientes y ventas son simulados; no representan resultados reales.</div>
+      </section>
+
+      <section id="menuScreen" class="screen">
+        <div class="section-heading"><div><div class="eyebrow">CENTRO DE OPERACIONES</div><h2>Elige tu desafío</h2><p>Completa los modos para mejorar tu empresa.</p></div><button class="btn small secondary" data-go="homeScreen">← Inicio</button></div>
+        <div class="company-strip"><div class="company-icon">M</div><div><strong>MA VIK DIGITAL</strong><span>Empresa emergente · Nivel <b id="levelLabel">1</b></span></div><div class="strip-right">REPUTACIÓN <b id="reputationLabel">50</b>/100</div></div>
+        <div class="mode-grid">
+          <button class="mode-card" data-mode="funnel"><span class="mode-icon">▽</span><span class="mode-number">MODO 01</span><strong>Construye tu embudo</strong><small>Ubica cada estrategia en la etapa correcta.</small><span class="card-cta">Jugar desafío ↗</span></button>
+          <button class="mode-card" data-mode="rescue"><span class="mode-icon">✚</span><span class="mode-number">MODO 02</span><strong>Salva la empresa</strong><small>Resuelve problemas comerciales con decisiones inteligentes.</small><span class="card-cta">Jugar desafío ↗</span></button>
+          <button class="mode-card" data-mode="mystery"><span class="mode-icon">◉</span><span class="mode-number">MODO 03</span><strong>Cliente misterioso</strong><small>Descubre qué necesita cada tipo de cliente.</small><span class="card-cta">Jugar desafío ↗</span></button>
+          <button class="mode-card" data-mode="race"><span class="mode-icon">⌁</span><span class="mode-number">MODO 04</span><strong>Carrera contra el tiempo</strong><small>Responde preguntas antes de que termine el cronómetro.</small><span class="card-cta">Jugar desafío ↗</span></button>
+          <button class="mode-card wide" data-mode="campaign"><span class="mode-icon">✦</span><span class="mode-number">MODO 05</span><strong>Crea tu propia campaña</strong><small>Diseña una estrategia completa desde la atracción hasta la fidelización.</small><span class="card-cta">Crear campaña ↗</span></button>
+          <button class="mode-card stats-card" data-go="statsScreen"><span class="mode-icon">▥</span><span class="mode-number">PANEL</span><strong>Ver estadísticas</strong><small>Analiza el embudo, ingresos y conversiones.</small><span class="card-cta">Abrir panel ↗</span></button>
+        </div>
+        <div class="progress-card"><div class="progress-title"><span>PROGRESO DE LA MISIÓN</span><b id="progressText">0% completado</b></div><div class="progress-track"><div id="overallProgress" class="progress-fill"></div></div><div id="badges" class="badges"></div></div>
+      </section>
+
+      <section id="tutorialScreen" class="screen">
+        <div class="section-heading"><div><div class="eyebrow">GUÍA RÁPIDA</div><h2>El embudo en 5 etapas</h2></div><button class="btn small secondary" data-go="menuScreen">← Menú</button></div>
+        <p class="lead">Un embudo representa el recorrido desde que alguien conoce una marca hasta que compra y vuelve.</p>
+        <div class="tutorial-list">
+          <article><span class="stage-num">01</span><div><h3>🎯 Atracción</h3><p>Haz que las personas descubran tu marca. Ejemplo: videos cortos, anuncios o contenido útil.</p></div></article>
+          <article><span class="stage-num">02</span><div><h3>💡 Interés</h3><p>Consigue que quieran saber más. Ejemplo: una guía gratuita o una publicación que resuelva una duda.</p></div></article>
+          <article><span class="stage-num">03</span><div><h3>🔎 Consideración</h3><p>Ayuda a comparar y confiar. Ejemplo: demostraciones, reseñas, preguntas frecuentes y beneficios.</p></div></article>
+          <article><span class="stage-num">04</span><div><h3>🛒 Conversión</h3><p>Facilita la compra con precios claros, un pago sencillo y una llamada a la acción.</p></div></article>
+          <article><span class="stage-num">05</span><div><h3>💎 Fidelización</h3><p>Haz que el cliente quiera volver. Ejemplo: seguimiento, soporte y recompensas.</p></div></article>
+        </div>
+        <button class="btn primary" data-go="menuScreen">¡Entendido, vamos a jugar! →</button>
+      </section>
+
+      <section id="gameScreen" class="screen">
+        <div class="section-heading"><div><div class="eyebrow" id="modeEyebrow">DESAFÍO</div><h2 id="gameTitle">Construye tu embudo</h2><p id="gameDescription"></p></div><button class="btn small secondary" data-go="menuScreen">✕ Salir</button></div>
+        <div class="game-layout"><div class="challenge-panel">
+          <div class="challenge-meta"><span id="challengeCount">RETO 1</span><span id="timerLabel" class="timer hidden">⏱ <b id="timerValue">30</b>s</span></div>
+          <div id="challengeContent"></div><div id="feedback" class="feedback hidden" role="status"></div>
+          <div class="challenge-controls"><button class="btn secondary hidden" id="nextBtn">Siguiente reto →</button><button class="btn primary hidden" id="finishBtn">Ver resultados</button></div>
+        </div>
+        <aside class="mini-dashboard"><div class="dash-head"><span>EMPRESA EN VIVO</span><span class="live-dot">● LIVE</span></div><div class="metric"><span>Visitantes</span><b id="visitorsMetric">1.000</b></div><div class="metric"><span>Interesados</span><b id="leadsMetric">150</b></div><div class="metric"><span>Compradores</span><b id="buyersMetric">30</b></div><div class="metric"><span>Conversión</span><b id="conversionMetric">3,0%</b></div><div class="mini-funnel" id="miniFunnel"></div><button class="btn full secondary" data-go="statsScreen">Ver panel completo ↗</button></aside></div>
+      </section>
+
+      <section id="statsScreen" class="screen">
+        <div class="section-heading"><div><div class="eyebrow">ANÁLISIS EN TIEMPO REAL</div><h2>Panel de resultados</h2><p>Los cambios vienen de tus decisiones, no de números aleatorios.</p></div><button class="btn small secondary" data-go="menuScreen">← Menú</button></div>
+        <div class="stats-grid"><article class="stat-card"><span>VISITANTES</span><strong id="statVisitors">1.000</strong><small>Personas que llegan a la marca</small></article><article class="stat-card"><span>CLIENTES POTENCIALES</span><strong id="statLeads">300</strong><small>Dejaron una señal de interés</small></article><article class="stat-card"><span>INTERESADOS</span><strong id="statInterested">150</strong><small>Evalúan la propuesta</small></article><article class="stat-card"><span>COMPRADORES</span><strong id="statBuyers">30</strong><small>Compras simuladas</small></article><article class="stat-card"><span>FIDELIZADOS</span><strong id="statReturning">12</strong><small>Volvieron a comprar</small></article><article class="stat-card highlight-stat"><span>INGRESOS SIMULADOS</span><strong id="statRevenue">$3.000</strong><small>Promedio simulado: $100 por compra</small></article></div>
+        <div class="analytics-grid"><article class="panel"><div class="panel-title"><h3>Tu embudo</h3><span>Personas por etapa</span></div><div id="bigFunnel" class="big-funnel"></div></article><article class="panel"><div class="panel-title"><h3>Rendimiento</h3><span>Porcentaje</span></div><div class="rate-row"><span>Visita → compra</span><b id="rateConversion">3,0%</b></div><div class="progress-track"><div id="rateBar" class="progress-fill"></div></div><div class="rate-row"><span>Potencial → interesado</span><b id="rateInterest">50,0%</b></div><div class="progress-track"><div id="interestBar" class="progress-fill red-fill"></div></div><div class="rate-row"><span>Compra → recompra</span><b id="rateReturn">40,0%</b></div><div class="progress-track"><div id="returnBar" class="progress-fill"></div></div><p class="formula">Tasa de conversión = (compradores ÷ visitantes) × 100</p></article></div>
+        <div class="panel"><div class="panel-title"><h3>Historial de decisiones</h3><span>Últimas acciones</span></div><div id="historyList" class="history-list"><p class="empty-state">Todavía no has tomado decisiones. ¡Entra a un modo de juego!</p></div></div>
+      </section>
+
+      <section id="resultsScreen" class="screen results-screen">
+        <div class="result-emblem">★</div><div class="eyebrow">MISIÓN COMPLETADA</div><h2 id="resultTitle">¡Buen trabajo, estratega!</h2><p id="resultSummary" class="lead"></p>
+        <div class="result-score"><span>PUNTUACIÓN TOTAL</span><strong id="finalScore">0</strong><span>XP</span></div>
+        <div class="result-grid"><div><span>Respuestas correctas</span><b id="resultCorrect">0</b></div><div><span>Ventas simuladas</span><b id="resultSales">30</b></div><div><span>Tasa de conversión</span><b id="resultRate">3,0%</b></div></div>
+        <div class="skills-box"><h3>Habilidades que practicaste</h3><div id="skillsLearned"></div></div>
+        <div class="hero-actions centered"><button class="btn primary" id="playAgainBtn">↻ Jugar otra vez</button><button class="btn secondary" data-go="menuScreen">Volver al menú</button></div>
+      </section>
+    </main>
+    <footer><span>FUNNEL MASTER <span class="gold">©</span> · Aprende haciendo</span><span>Prototipo educativo · Datos ficticios</span></footer>
+  </div>
+  <script src="js/challenges.js"></script><script src="js/statistics.js"></script><script src="js/game.js"></script>
+</body>
+</html>
